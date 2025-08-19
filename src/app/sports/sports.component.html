@@ -1,1 +1,13 @@
-<p>sports works!</p>
+<section class="sports-explore">
+	<h2>Explore Sports</h2>
+	<div class="sports-grid">
+				<a [routerLink]="['/sports', sport.name]" class="sport-link" *ngFor="let sport of sports">
+					<mat-card class="sport-card">
+					<img mat-card-image [src]="sport.img" [alt]="sport.name" [title]="sport.name" class="sport-img" />
+						<mat-card-content>
+							<div class="sport-name">{{ sport.name }}</div>
+						</mat-card-content>
+					</mat-card>
+				</a>
+	</div>
+</section>

@@ -10,9 +10,12 @@ import { CommonModule } from '@angular/common';
     <section class="hero">
       <div class="overlay">
         <h2 class="subtitle">WELCOME TO</h2>
-        <h1 class="title">GECJ SPORTS</h1>
-        <p class="tagline">Where Passion Meets Performance</p>
-        <button class="cta-btn">Explore More</button>
+        <h1 class="title animated-text">
+          <span *ngFor="let char of gecjSportsChars; let i = index" [style.animationDelay]="(i * 0.07)+'s'">{{ char === ' ' ? '\u00A0' : char }}</span>
+        </h1>
+  <p class="tagline">Where Passion Meets Performance</p>
+        
+        
       </div>
     </section>
   `,
@@ -55,26 +58,35 @@ import { CommonModule } from '@angular/common';
       padding: 0 1.5rem;
       animation: fadeInUp 1.1s cubic-bezier(.4,2,.6,1) forwards;
     }
-    .subtitle {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      opacity: 0.92;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    }
-    .title {
+    .subtitle, .title {
       font-size: 3.8rem;
       font-weight: 900;
       text-transform: uppercase;
-      background: linear-gradient(90deg, #00e6ff 30%, #ff9800 70%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #00bcd4;
       margin-bottom: 0.5rem;
       letter-spacing: 2px;
       text-shadow: 0 4px 24px rgba(0,0,0,0.18);
+      text-align: center;
+    }
+    .animated-text {
+      display: inline-block;
+    }
+    .animated-text span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+      animation: letterFadeInUp 0.7s cubic-bezier(.4,2,.6,1) forwards;
+    }
+    .animated-text span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+      animation: letterFadeInUp 0.7s cubic-bezier(.4,2,.6,1) forwards;
+    }
+    @keyframes letterFadeInUp {
+      0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+      60% { opacity: 1; transform: translateY(-6px) scale(1.05); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
     }
     .tagline {
       font-size: 1.3rem;
@@ -121,4 +133,11 @@ import { CommonModule } from '@angular/common';
     }
   `]
 })
-export class AboutSectionComponent {}
+export class AboutSectionComponent {
+  get welcomeToChars() {
+    return 'WELCOME TO'.split('');
+  }
+  get gecjSportsChars() {
+    return 'GECJ SPORTS'.split('');
+  }
+}

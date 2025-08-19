@@ -1,3 +1,35 @@
+/* About Us Section Styling */
+.about-section {
+  max-width: 900px;
+  margin: 3rem auto 2rem auto;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.about-section p {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.about-motto {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff9800;
+  letter-spacing: 0.2em;
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+}
 
 
 .hero::before {

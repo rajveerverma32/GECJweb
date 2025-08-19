@@ -1,0 +1,59 @@
+/* Remove underline from sport links */
+.sport-link {
+	text-decoration: none;
+}
+
+.sports-explore {
+	max-width: 1100px;
+	margin: 2.5rem auto;
+	padding: 1.5rem;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+	text-align: center;
+}
+.sports-explore h2 {
+	font-size: 2.1rem;
+	color: #00bcd4;
+	margin-bottom: 2rem;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.sports-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 2rem;
+	justify-items: center;
+}
+.sport-card {
+	border-radius: 16px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.18s, box-shadow 0.18s;
+	cursor: pointer;
+	min-width: 180px;
+	max-width: 240px;
+	margin: 0 auto;
+}
+.sport-card:hover {
+	transform: translateY(-6px) scale(1.04);
+	box-shadow: 0 8px 32px rgba(0,188,212,0.13);
+}
+.sport-img {
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+	margin: 1.1rem auto 0.5rem auto;
+	display: block;
+}
+.sport-name {
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: #222;
+	letter-spacing: 1px;
+	margin-top: 0.2rem;
+	text-align: center;
+}
