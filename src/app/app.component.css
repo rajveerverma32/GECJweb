@@ -1,0 +1,13 @@
+/* app.component.css */
+.college-img-container {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5; /* optional */
+}
+
+.college-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
