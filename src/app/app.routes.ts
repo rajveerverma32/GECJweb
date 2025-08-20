@@ -10,4 +10,5 @@ export const routes: Routes = [
 	{ path: 'timeline', loadComponent: () => import('./event-timelines/event-timelines.component').then(m => m.EventsTimelineComponent) },
 	{ path: 'contact', loadComponent: () => import('./contact-us/contact-us.component').then(m => m.ContactComponent) },
 	{ path: 'admin', loadComponent: () => import('./admin-panel/admin-panel.component').then(m => m.AdminComponent) },
+		{ path: 'contact-us/council-detail', loadComponent: () => import('./contact-us/council-detail.component').then(m => m.CouncilDetailComponent) },
 ];

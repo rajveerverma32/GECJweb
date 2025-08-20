@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ContactUsCouncilCardComponent } from './contact-us-council-card.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  template: `<h2>Contact Us Page</h2>`
+  imports: [CommonModule, ContactUsCouncilCardComponent],
+  template: `
+    <app-contact-us-council-card></app-contact-us-council-card>
+  `
 })
 export class ContactComponent {}

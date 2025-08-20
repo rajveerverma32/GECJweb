@@ -8,6 +8,7 @@
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   text-align: center;
 }
+
 .about-section h2 {
   font-size: 2.2rem;
   color: #00bcd4;
@@ -16,12 +17,25 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+/* Make hero and about sections full viewport height for scroll effect */
+.fullpage-section {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
 .about-section p {
   font-size: 1.15rem;
   color: #222;
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
+
 .about-motto {
   font-size: 1.1rem;
   font-weight: 700;

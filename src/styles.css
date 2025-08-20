@@ -1,3 +1,26 @@
+body.dark-theme {
+  background: #0a1224 !important;
+  color: #fff !important;
+}
+body.light-theme {
+  background: #f5f7fa !important;
+  color: #222 !important;
+}
+
+/* Example: override card and section backgrounds for dark/light, but NOT navbar */
+.dark-theme .council-contact-section, .dark-theme .mat-card {
+  background: #232f45 !important;
+  color: #fff !important;
+}
+.light-theme .council-contact-section, .light-theme .mat-card {
+  background: #fff !important;
+  color: #222 !important;
+}
+
+/* Always use the same navbar background regardless of theme */
+.navbar {
+  background: linear-gradient(to right, #0d1b2a, #1b263b) !important;
+}
 /* You can add global styles to this file, and also import other style files */
 
 html, body {

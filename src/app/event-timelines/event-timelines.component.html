@@ -1,1 +1,19 @@
-<p>event-timelines works!</p>
+
+<div class="timeline-container">
+	<h2 class="timeline-title">Events Timeline</h2>
+	<div *ngFor="let timeline of timelines" class="sport-timeline">
+		<mat-card class="timeline-mat-card">
+			<h3 class="sport-title">{{ timeline.sport }}</h3>
+			<ul class="event-list">
+				<li *ngFor="let event of timeline.events" class="event-item">
+					<div class="event-dot"></div>
+					<div class="event-details">
+						<span class="event-name">{{ event.name }}</span>
+						<span class="event-time">{{ event.time }}</span>
+						<span class="event-location">{{ event.location }}</span>
+					</div>
+				</li>
+			</ul>
+		</mat-card>
+	</div>
+</div>

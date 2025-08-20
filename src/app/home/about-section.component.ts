@@ -22,8 +22,9 @@ import { CommonModule } from '@angular/common';
   styles: [`
     .hero {
       position: relative;
-      height: 80vh;
+      height: 100vh;
       min-height: 350px;
+      width: 100vw;
       background: url('https://i.pinimg.com/1200x/fb/bc/4a/fbbc4a14de7d7a1e4d6c1a7aec93d7f0.jpg') no-repeat center center/cover;
       display: flex;
       justify-content: center;
@@ -31,9 +32,11 @@ import { CommonModule } from '@angular/common';
       text-align: center;
       color: #fff;
       overflow: hidden;
-      border-radius: 0 0 40px 40px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-      transition: transform 0.5s cubic-bezier(.4,2,.6,1);
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+      transition: none;
     }
     .hero:hover {
       transform: scale(1.025);
