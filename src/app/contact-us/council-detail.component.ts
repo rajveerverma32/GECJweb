@@ -25,14 +25,14 @@ import { CommonModule } from '@angular/common';
   styles: [`
     .council-detail-bg {
       min-height: 100vh;
-      background: #0a1224;
+      /* background will be set by theme class on body */
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 2rem 0;
     }
     .council-detail-card {
-      background: #232f45;
+      /* background will be set by .mat-card and theme class */
       border-radius: 32px;
       box-shadow: 0 8px 40px rgba(0,0,0,0.22);
       padding: 2.5rem 2.2rem 2.2rem 2.2rem;
@@ -70,21 +70,21 @@ import { CommonModule } from '@angular/common';
       display: block;
     }
     .council-detail-name {
-      color: #fff;
+      /* color will be set by theme */
       font-size: 1.35rem;
       font-weight: 700;
       margin-bottom: 0.7rem;
       text-align: center;
     }
     .council-detail-call {
-      color: #fff;
+      /* color will be set by theme */
       font-size: 1.1rem;
       font-weight: 500;
       margin-bottom: 1.2rem;
       text-align: center;
     }
     .council-detail-call b {
-      color: #fff;
+      /* color will be set by theme */
       font-weight: 800;
     }
     .council-detail-icons {
